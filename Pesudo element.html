@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  h1::before{
+    content: "Demo ";
+    color: palegreen;
+  }
+  .special-effect::after{
+    content: " (This week)";
+    font-size: 20px;
+    color: rgb(35, 183, 241);
+  }
+  body{
+    counter-reset: section;
+  }
+
+  p::before{
+    counter-increment: section;
+    content:"Crush❤️" counter(section)": ";
+  }
+
+</style>
+</head>
+<body>
+  <h1>pseudo Class</h1>
+  <h1 class="special-effect">Normal Class</h1>
+  <h1 class="special-effect">Attentive Class</h1>
+  <input name="email" type="text">
+  <br>
+  <input name="password" type="text">
+  <a href="https://www.youtube.com/watch?v=JPWF4LRlJeM">Youtube</a>
+  <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Google</a>
+  <ul>
+    <p>Alia</p>
+    <p>Dalia</p>
+    <p>Tania</p>
+    <p>Suraia</p>
+    <p>Malia</p>
+    <p>Rabia</p>
+    <p>Faria</p>
+  </ul>
+</body>
+</html>
